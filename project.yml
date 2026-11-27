@@ -1,0 +1,31 @@
+
+name: ScriptCam
+
+options:
+  bundleIdPrefix: com.scriptcam
+  deploymentTarget:
+    macOS: "13.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MACOSX_DEPLOYMENT_TARGET: "13.0"
+
+targets:
+  ScriptCam:
+    type: application
+    platform: macOS
+    sources:
+      - path: ScriptCam
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.scriptcam.app
+        PRODUCT_NAME: ScriptCam
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_NSCameraUsageDescription: "ScriptCam uses your camera to record your videos."
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: "ScriptCam uses your microphone to record your voice."
+        INFOPLIST_KEY_LSApplicationCategoryType: "public.app-category.video"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGNING_ALLOWED: NO
+        ENABLE_HARDENED_RUNTIME: NO
+        SWIFT_VERSION: "5.9"

@@ -1,0 +1,20 @@
+# Build products
+build/
+DerivedData/
+*.app
+*.dmg
+*.xcarchive
+*.dSYM
+
+# Xcode user-specific files
+xcuserdata/
+*.xcuserstate
+
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Swift Package Manager
+.swiftpm/
